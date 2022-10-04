@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="memeGen.css">
+    <title>MemeGen</title>
+</head>
+<body>
+    <h1>Meme Generator</h1>
+    <div id='blocko'>
+        <div id="generation-side">
+            <h3>Enter details below:</h3>
+            <form id="myForm">
+                <div>
+                    <label for="image">Insert link to image:</label>
+                    <input type="url" class="form-inputs" name="linkedImg" id="linkedImg" placeholder="Include 'https://www.'">
+                </div>
+                <div>
+                    <label for="upper-text">Upper line of text:</label>
+                    <input type="text" class="form-inputs" name="upper-text" id="upper-text" placeholder="Optional">
+                </div>
+                <div>
+                    <label for="lower-text">Lower line of text:</label>
+                    <input type="text" class="form-inputs" name="lower-text" id="lower-text" placeholder="Optional">
+                </div>
+                <div>
+                    <label for="text-color">Color of text:</label>
+                    <input type="color" id="text-color" value="#FFFFFF" name="color" class="form-input">
+                </div>
+                <div id="button">
+                    <button type="submit">Generate Meme!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="previous-memes">
+
+    </div>
+    <script src="memeGen.js"></script>
+</body>
+</html>

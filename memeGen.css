@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(127, 197, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: beige;
+    
+}
+
+#title{
+    align-items: center;
+}
+
+#generation-side {
+    /* max-width: 400px; */
+    margin: 5px;
+}
+#blocko{
+    display: flex;
+}
+
+#previous-memes{
+    padding: 10px;
+    width: 95%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    word-break: break-all;
+}
+
+/* #meme-side {
+    background-color: beige;
+    border: black solid 1px;
+    width: 300px;
+    min-width: 30px;
+    max-width: 550px;
+    min-height: 30px;
+    margin: 5px;
+} */
+
+label{
+    display: inline-block;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
+
+input {
+  display: inline-block;
+}
+
+#button {
+    position: relative;
+    top: 50%;    
+    left: 50%;
+}
+
+h3 {
+    display: inline-block;
+    text-align: center;
+}
+
+.container{
+    width: 400px;
+    height: auto;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    overflow:auto;
+}
+
+/* can get hoverDelete to center vertically */
+.hoverDelete{
+    visibility: hidden;
+    z-index: 2;
+    top: 20%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+
+
+.upperTextStyle, .lowerTextStyle{
+    position: absolute;
+    z-index: 1;
+    /* text-align:center; */
+    /* align-self: flex-start; */
+    /* align-content: center; */
+    /* color: white; */
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.upperTextStyle{
+    top: 5%;
+}
+
+.lowerTextStyle{
+    bottom: 5%;
+}
+
+.memeImage {
+    max-width: 400px;
+}
+
+/* .container:hover {
+    filter: grayscale(50%);
+
+} */
+
+.container:hover .hoverDelete {
+    visibility: visible;
+}
+/* NOTE TO SELF - this took an hour to figure out, have to put the hover on the parent element */
+
+.container:hover .memeImage {
+    opacity: 0.2;
+}
+/* dont know why click event does not treat this as a child of the container */
